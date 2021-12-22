@@ -1,7 +1,8 @@
-## 設定區塊內的內容
 import time
 import hashlib
 
+
+## 設定區塊內的內容
 class Transaction:
     def __init__(self, gender, receiver, amounts, fee, message):
         self.gender = gender
@@ -34,6 +35,7 @@ class BlockChain:
         self.pending_transactions = []
 
 
+#定義交易格式
 def transaction_to_string(self, transaction):
     transaction_dict = {
         'sender': str(transaction.sender),
